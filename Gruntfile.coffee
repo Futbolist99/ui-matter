@@ -4,13 +4,17 @@ module.exports = (grunt) ->
   pkg = grunt.file.readJSON 'package.json'
   
   config = GruntVTEX.generateConfig grunt, pkg
+  config['gh-pages'] = 
+    options:
+      base: 'build/<%= relativePath %>'
+    src: ['**']
 
   tasks =
     # Building block tasks
     build: ['clean', 'concat:templates', 'copy:main', 'copy:pkg', 'copy:janus_index', 'nginclude', 'coffee', 'less', 'ngtemplates']
     min: ['useminPrepare', 'concat', 'uglify', 'usemin'] # minifies files
     # Deploy tasks
-    dist: ['build', 'min', 'copy:deploy'] # Dist - minifies files
+    dist: ['build', 'min', 'copy:deploy', 'gh-pages'] # Dist - minifies files
     test: []
     vtex_deploy: ['shell:cp']
     # Development tasks
