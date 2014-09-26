@@ -1,8 +1,8 @@
 {
-  "name": "speedbag",
-  "version": "3.1.0",
+  "name": "ui-matter",
+  "version": "0.1.0",
   "readmeFilename": "README.md",
-  "description": "A grunt coffee/less/live-reload/cssmin/uglify/connect/angular/bootstrap/jquery/underscore boilerplate.",
+  "description": "Custom Web UI Components based on Bootstrap",
   "main": "index.html",
   "paths": [
     "/ui-matter"
@@ -36,7 +36,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/vtex/speedbag.git"
+    "url": "git://github.com/vtex/ui-matter.git"
   },
   "keywords": [
     "grunt",
@@ -45,10 +45,12 @@
     "livereload"
   ],
   "contributors": [
+    "Rodrigo Muniz",
     "Guilherme Rodrigues <gadr90@gmail.com>",
-    "Breno Calazans <brenocalazans@gmail.com>",
-    "Luca Cantini <lucafmcantini@gmail.com>",
-    "Guilherme Berger"
+    "Leandro Oriente",
+    "Vitor Mattos",
+    "Augusto Barbosa",
+    "Breno Calazans <brenocalazans@gmail.com>"
   ],
   "license": "MIT"
 }
