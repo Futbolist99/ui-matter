@@ -1,2 +1,0 @@
-document.write("<script type='text/html' id='example-knockout-first-template'><div id=\"hello\">Hello, Knockout!</div></script>");
-document.write("<script type='text/html' id='example-knockout-second-template'><div id=\"goodbye\">Goodbye, Knockout!</div></script>");
