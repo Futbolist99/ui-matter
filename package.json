@@ -1,6 +1,6 @@
 {
   "name": "ui-matter",
-  "version": "0.1",
+  "version": "0.1.0",
   "readmeFilename": "README.md",
   "description": "Custom Web UI Components based on Bootstrap",
   "main": "index.html",
