@@ -1,56 +1,46 @@
 {
-  "name": "ui-matter",
-  "version": "0.1.0",
-  "readmeFilename": "README.md",
-  "description": "Custom Web UI Components based on Bootstrap",
-  "main": "index.html",
-  "paths": [
-    "/ui-matter"
-  ],
-  "hosts": [
-    "*.vtexcommerce.com.br",
-    "*.vtexcommercebeta.com.br",
-    "*.vtexcommercestable.com.br",
-    "*.vtexcommercealfa.com.br",
-    "*.vtexlocal.com.br"
-  ],
-  "backend": "https://io.vtex.com.br/",
-  "deploy": "deploy/",
-  "devDependencies": {
-    "grunt": "~0.4.5",
-    "grunt-angular-templates": "~0.4.1",
-    "grunt-contrib-clean": "~0.5.0",
-    "grunt-contrib-coffee": "~0.8.0",
-    "grunt-contrib-concat": "~0.4.0",
-    "grunt-contrib-connect": "~0.7.1",
-    "grunt-contrib-copy": "~0.5.0",
-    "grunt-contrib-cssmin": "~0.7.0",
-    "grunt-contrib-less": "~0.8.3",
-    "grunt-contrib-uglify": "~0.2.2",
-    "grunt-contrib-watch": "~0.5.1",
-    "grunt-nginclude": "0.3.x",
-    "grunt-usemin": "~2.0.2",
-    "grunt-shell": "^0.7.0",
-    "grunt-vtex": "^0.8.0",
-    "grunt-gh-pages": "^0.9.1"
+  "name": "react-hot-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate for ReactJS project with hot code reloading",
+  "scripts": {
+    "start": "node server.js",
+    "lint": "eslint src"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/vtex/ui-matter.git"
+    "url": "https://github.com/gaearon/react-hot-boilerplate.git"
   },
   "keywords": [
-    "grunt",
-    "coffee",
-    "less",
-    "livereload"
+    "react",
+    "reactjs",
+    "boilerplate",
+    "hot",
+    "reload",
+    "hmr",
+    "live",
+    "edit",
+    "webpack"
   ],
-  "contributors": [
-    "Rodrigo Muniz",
-    "Guilherme Rodrigues <gadr90@gmail.com>",
-    "Leandro Oriente",
-    "Vitor Mattos",
-    "Augusto Barbosa",
-    "Breno Calazans <brenocalazans@gmail.com>"
-  ],
-  "license": "MIT"
+  "author": "Dan Abramov <dan.abramov@me.com> (http://github.com/gaearon)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gaearon/react-hot-boilerplate/issues"
+  },
+  "homepage": "https://github.com/gaearon/react-hot-boilerplate",
+  "devDependencies": {
+    "babel-core": "^5.4.7",
+    "babel-eslint": "^3.1.9",
+    "babel-loader": "^5.1.2",
+    "eslint-plugin-react": "^2.3.0",
+    "react-hot-loader": "^1.2.7",
+    "webpack": "^1.9.6",
+    "webpack-dev-server": "^1.8.2"
+  },
+  "dependencies": {
+    "css-loader": "^0.15.1",
+    "less": "^2.5.1",
+    "less-loader": "^2.2.0",
+    "react": "^0.13.0",
+    "style-loader": "^0.12.3"
+  }
 }
