@@ -5,7 +5,9 @@ export default class Shelf extends Component {
   render() {
     let value = this.props.value;
     return (
-      <h1 className="shelf">{value}</h1>
+      <div className='container'>
+        <h1>Taca-lhe pau</h1>
+      </div>
     );
   }
 }
