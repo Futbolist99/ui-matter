@@ -7,9 +7,8 @@ import NavBar from './components/navbar/NavBar';
 export default class App extends Component {
   render() {
     return (
-      <div>
-        <h1>Hello, world.</h1>
-        <Card value="Eae"/>
+      <div className="str-content">
+        <Card title="Card Maneiro" copy="Este card é muito maneiro"/>
         <NavBar/>
       </div>
     );
