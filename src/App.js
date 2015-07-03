@@ -12,9 +12,14 @@ export default class App extends Component {
       title: 'Card Maneiro'
     };
 
+    let cards = [];
+    for (var i = 0; i < 25; i++) {
+      cards.push(<Card title={mock.title} copy={mock.copy} />);
+    }
+
     return (
       <div className="str-content">
-        <Card title="Card Maneiro" copy="Este card é muito maneiro"/>
+        {cards}
         <NavBar isOpen={mock.isOpen}/>
       </div>
     );
