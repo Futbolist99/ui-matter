@@ -3,9 +3,13 @@ import style from './Card.less';
 
 export default class Card extends Component {
   render() {
-    let value = this.props.value;
+    let title = this.props.title;
+    let copy = this.props.copy;
     return (
-      <h1 className="card">{value}</h1>
+      <a className="uim-card">
+        <div className="uim-card-heading">{title}</div>
+        <div className="uim-card-body">{copy}</div>
+      </a>
     );
   }
 }

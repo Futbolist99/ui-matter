@@ -1,14 +1,26 @@
 import React, { Component } from 'react';
 import style from './app.less';
 import Card from './components/card/Card';
+import NavBar from './components/navbar/NavBar';
 
 
 export default class App extends Component {
   render() {
+    var mock = {
+      isOpen: true,
+      copy: 'Este card não é muito maneiro',
+      title: 'Card Maneiro'
+    };
+
+    let cards = [];
+    for (var i = 0; i < 25; i++) {
+      cards.push(<Card title={mock.title} copy={mock.copy} />);
+    }
+
     return (
-      <div>
-        <h1>Hello, world.</h1>
-        <Card value="Eae"/>
+      <div className="str-content">
+        {cards}
+        <NavBar isOpen={mock.isOpen}/>
       </div>
     );
   }
