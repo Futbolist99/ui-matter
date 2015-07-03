@@ -15,7 +15,7 @@ export default class App extends Component {
     return (
       <div className="str-content">
         <Card title="Card Maneiro" copy="Este card é muito maneiro"/>
-        <NavBar/>
+        <NavBar isOpen={mock.isOpen}/>
       </div>
     );
   }
