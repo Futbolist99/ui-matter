@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import style from './app.less';
 import Card from './components/card/Card';
 import NavBar from './components/navbar/NavBar';
+import EditBar from './components/editbar/EditBar';
+import BottomBar from './components/bottombar/BottomBar';
 
 
 export default class App extends Component {
@@ -19,8 +21,12 @@ export default class App extends Component {
 
     return (
       <div className="str-content">
-        {cards}
-        <NavBar isOpen={mock.isOpen}/>
+        <EditBar />
+        <div className="str-inner">
+          {cards}
+          <NavBar isOpen={mock.isOpen}/>
+           <BottomBar />
+        </div>
       </div>
     );
   }

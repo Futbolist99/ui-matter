@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import style from './Card.less';
 
-export default class Card extends Component {
+let Card = React.createClass({
   render() {
     let title = this.props.title;
     let copy = this.props.copy;
@@ -12,4 +12,6 @@ export default class Card extends Component {
       </a>
     );
   }
-}
+});
+
+export default Card;

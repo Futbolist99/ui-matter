@@ -1,11 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import classNames from 'classNames';
 import style from './NavBar.less';
 
-
-export default class NavBar extends Component {
+let NavBar = React.createClass({
   render() {
-
     var classes = classNames(
       'str-navbar',
       { 'str-navbar--open': this.props.isOpen },
@@ -28,4 +26,6 @@ export default class NavBar extends Component {
       </nav>
     );
   }
-}
+});
+
+export default NavBar;
